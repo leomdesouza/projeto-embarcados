@@ -2,7 +2,7 @@ var express = require('express');
 
 var app = express();
 
-var port = process.env.PORT || 3000;
+var port = Number(process.env.PORT || 3000);
 
 var bookRouter = express.Router();
 
@@ -23,5 +23,5 @@ app.get('/', function(req, res){
 });
 
 app.listen(port, function(){
-    console.log('Gul is running my app on PORT: ' + port);
+    console.log('Gulp is running my app on PORT: ' + port);
 });
